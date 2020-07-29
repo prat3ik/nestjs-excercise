@@ -12,9 +12,8 @@ jobs:
             - run: npm install
             - run: echo 'done--'
             - run: git clone git@github.com:cirbuk/kubric-automation-testing.git
-            - run: cd kubric-automation-testing/
-            - run: npm install
-            - run: npm test
+            - run: cd kubric-automation-testing/; ls ; npm install ; npm test
+
 workflows:
     build-and-test:
       jobs:
