@@ -15,6 +15,9 @@ jobs:
             - run: echo 'done--'
             - run: git clone git@github.com:cirbuk/kubric-automation-testing.git
             - run: cd kubric-automation-testing/; ls ; npm install ; npm test
+            - store_artifacts:
+                path: mochawesome-report/
+
 
 workflows:
     build-and-test:
