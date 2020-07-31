@@ -16,7 +16,7 @@ jobs:
             - run: git clone git@github.com:cirbuk/kubric-automation-testing.git
             - run: cd kubric-automation-testing/; ls ; npm install ; npm test
             - store_artifacts:
-                path: mochawesome-report/
+                path: kubric-automation-testing/mochawesome-report/
 
 
 workflows:
