@@ -8,7 +8,6 @@ jobs:
     executor:
       name: node/default
     steps:
-      - browser-tools/install-chrome
       - checkout
       - run: echo "Executing automation tests...."
       - run:
@@ -20,7 +19,7 @@ jobs:
           color: '#42e2f4'
           mentions: 'USERID1,USERID2,'
           message: This is a custom message notification
-          webhook: webhook
+          webhook: https://hooks.slack.com/services/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
 
 workflows:
     build-and-test:
