@@ -1,0 +1,22 @@
+version: 2.1
+orbs:
+  browser-tools: circleci/browser-tools@1.0.1
+  node: circleci/node@1.1.6
+jobs:
+  build-and-test:
+    executor:
+      name: node/default
+    steps:
+      - browser-tools/install-chrome
+      - checkout
+      - run: echo "Executing automation tests...."
+      - command: |
+          curl --user b9c3ba2c78c909fdeb0c85adfe060a15474be0b6: \
+                --data revision=$CIRCLE_SHA1 \
+                https://circleci.com/api/v1.1/project/github/cirbuk/kubric-automation-testing/tree/master
+
+
+workflows:
+    build-and-test:
+      jobs:
+        - build-and-test
