@@ -13,7 +13,7 @@ jobs:
       - run:
           name: cURL to automation tests pipeline
           command: |
-            echo "Hey, there"
+            echo "Hey, ther1e"
 
 workflows:
     build-and-test:
