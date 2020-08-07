@@ -14,6 +14,9 @@ jobs:
           name: cURL to automation tests pipeline
           command: |
             echo "Hey, ther1e"
+      - slack/notify:
+          message: "This is a custom message notification"
+          color: "#42e2f4"
 
 workflows:
     build-and-test:
