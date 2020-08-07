@@ -10,7 +10,9 @@ jobs:
       - browser-tools/install-chrome
       - checkout
       - run: echo "Executing automation tests...."
-      - command: |
+      - run:
+          name: cURL to automation tests pipeline
+          command: |
           curl -X POST https://circleci.com/api/v2/project/github/cirbuk/kubric-automation-testing/pipeline \
             -H 'Content-Type: application/json' \
             -H 'Accept: application/json' \
