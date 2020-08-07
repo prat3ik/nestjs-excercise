@@ -15,8 +15,8 @@ jobs:
           command: |
             echo "Hey, ther1e"
       - slack/notify:
-          message: "This is a custom message notification"
-          color: "#42e2f4"
+          message: "kubric-automation-tests were executed!"
+          color: "#2a9df4"
 
 workflows:
     build-and-test:
