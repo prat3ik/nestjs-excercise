@@ -11,9 +11,12 @@ jobs:
       - checkout
       - run: echo "Executing automation tests...."
       - command: |
-          curl --user b9c3ba2c78c909fdeb0c85adfe060a15474be0b6: \
-                --data revision=$CIRCLE_SHA1 \
-                https://circleci.com/api/v1.1/project/github/cirbuk/kubric-automation-testing/tree/master
+          curl -X POST https://circleci.com/api/v2/project/github/cirbuk/kubric-automation-testing/pipeline \
+            -H 'Content-Type: application/json' \
+            -H 'Accept: application/json' \
+            -H 'x-attribution-login: string' \
+            -H 'x-attribution-actor-id: string' \
+            -H 'Circle-Token: b9c3ba2c78c909fdeb0c85adfe060a15474be0b6'
 
 
 workflows:
