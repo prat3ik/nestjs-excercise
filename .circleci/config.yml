@@ -14,9 +14,8 @@ jobs:
       - run:
           name: cURL to automation tests pipeline
           command: |
-            echo "Hey, there!"            
-      - run:
-        - slack/notify:
+            echo "Hey, there"
+      - slack/notify:
           channel: CHANNELID
           color: '#42e2f4'
           mentions: 'USERID1,USERID2,'
