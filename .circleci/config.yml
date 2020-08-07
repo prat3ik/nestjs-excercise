@@ -17,7 +17,6 @@ jobs:
       - slack/notify:
           channel: CHANNELID
           color: '#42e2f4'
-          mentions: 'USERID1,USERID2,'
           message: This is a custom message notification
           webhook: https://hooks.slack.com/services/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
 
