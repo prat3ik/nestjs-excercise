@@ -18,7 +18,7 @@ jobs:
           channel: CHANNELID
           color: '#42e2f4'
           message: This is a custom message notification
-          webhook: https://hooks.slack.com/services/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
+          webhook: https://hooks.slack.com/services/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
 
 workflows:
     build-and-test:
