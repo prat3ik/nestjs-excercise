@@ -13,12 +13,12 @@ jobs:
       - run:
           name: cURL to automation tests pipeline
           command: |
-          curl -X POST https://circleci.com/api/v2/project/github/cirbuk/kubric-automation-testing/pipeline \
-            -H 'Content-Type: application/json' \
-            -H 'Accept: application/json' \
-            -H 'x-attribution-login: string' \
-            -H 'x-attribution-actor-id: string' \
-            -H 'Circle-Token: b9c3ba2c78c909fdeb0c85adfe060a15474be0b6'
+            curl -X POST https://circleci.com/api/v2/project/github/cirbuk/kubric-automation-testing/pipeline \
+              -H 'Content-Type: application/json' \
+              -H 'Accept: application/json' \
+              -H 'x-attribution-login: string' \
+              -H 'x-attribution-actor-id: string' \
+              -H 'Circle-Token: b9c3ba2c78c909fdeb0c85adfe060a15474be0b6'
 
 
 workflows:
